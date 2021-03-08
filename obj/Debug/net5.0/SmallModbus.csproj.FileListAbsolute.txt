@@ -1,0 +1,16 @@
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\obj\Debug\net5.0\SmallModbus.csprojAssemblyReference.cache
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\obj\Debug\net5.0\SmallModbus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\obj\Debug\net5.0\SmallModbus.AssemblyInfoInputs.cache
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\obj\Debug\net5.0\SmallModbus.AssemblyInfo.cs
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\obj\Debug\net5.0\SmallModbus.csproj.CoreCompileInputs.cache
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\obj\Debug\net5.0\SmallModbus.genruntimeconfig.cache
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\bin\Debug\net5.0\SmallModbusClient.exe
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\bin\Debug\net5.0\SmallModbusClient.deps.json
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\bin\Debug\net5.0\SmallModbusClient.runtimeconfig.json
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\bin\Debug\net5.0\SmallModbusClient.runtimeconfig.dev.json
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\bin\Debug\net5.0\SmallModbusClient.dll
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\bin\Debug\net5.0\ref\SmallModbusClient.dll
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\bin\Debug\net5.0\SmallModbusClient.pdb
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\obj\Debug\net5.0\SmallModbusClient.dll
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\obj\Debug\net5.0\ref\SmallModbusClient.dll
+C:\Users\Casey O'Connor\source\repos\SmallModbusSolution\SmallModbus\obj\Debug\net5.0\SmallModbusClient.pdb
