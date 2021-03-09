@@ -330,19 +330,9 @@ namespace SmallModbusTcpClient
             
         }
 
-        public static bool[] ReadCoils(ushort trasactionId, byte serverId, ushort startingAddr, ushort registerQty)
+        public static void SendRequest(ApplicationDataUnit applicationDataUnit)
         {
-            // set function
-            ApplicationDataUnit applicationDataUnit = new()
-            {
-                TransactionID = trasactionId,
-                UnitID = serverId,
-                FunctionCode = 1,
-                StartingAddress = startingAddr,
-                RegisterQuantity = registerQty
-            };
-
-            // get formatted Modbus TCP request 
+            // get formatted Modbus TCP request
             byte[] adu = applicationDataUnit.Request;
             //Console.WriteLine(BitConverter.ToString(adu));
 
@@ -355,8 +345,77 @@ namespace SmallModbusTcpClient
 
             // parse response
             applicationDataUnit.ParseAduResponse(response);
+        }
+
+        public static bool[] ReadCoils(ushort trasactionId, byte serverId, ushort startingAddr, ushort registerQty)
+        {
+            // set function
+            ApplicationDataUnit applicationDataUnit = new()
+            {
+                TransactionID = trasactionId,
+                UnitID = serverId,
+                FunctionCode = 1,
+                StartingAddress = startingAddr,
+                RegisterQuantity = registerQty
+            };
+
+            SendRequest(applicationDataUnit);
 
             return applicationDataUnit.BoolRegister;
+
+        }
+
+        public static bool[] ReadDiscreteInputs(ushort trasactionId, byte serverId, ushort startingAddr, ushort registerQty)
+        {
+            // set function
+            ApplicationDataUnit applicationDataUnit = new()
+            {
+                TransactionID = trasactionId,
+                UnitID = serverId,
+                FunctionCode = 2,
+                StartingAddress = startingAddr,
+                RegisterQuantity = registerQty
+            };
+
+            SendRequest(applicationDataUnit);
+
+            return applicationDataUnit.BoolRegister;
+
+        }
+
+        public static ushort[] ReadHoldingRegisters(ushort trasactionId, byte serverId, ushort startingAddr, ushort registerQty)
+        {
+            // set function
+            ApplicationDataUnit applicationDataUnit = new()
+            {
+                TransactionID = trasactionId,
+                UnitID = serverId,
+                FunctionCode = 3,
+                StartingAddress = startingAddr,
+                RegisterQuantity = registerQty
+            };
+
+            SendRequest(applicationDataUnit);
+
+            return applicationDataUnit.ByteRegister;
+
+        }
+
+        public static ushort[] ReadInputRegisters(ushort trasactionId, byte serverId, ushort startingAddr, ushort registerQty)
+        {
+            // set function
+            ApplicationDataUnit applicationDataUnit = new()
+            {
+                TransactionID = trasactionId,
+                UnitID = serverId,
+                FunctionCode = 4,
+                StartingAddress = startingAddr,
+                RegisterQuantity = registerQty
+            };
+
+            SendRequest(applicationDataUnit);
+
+            return applicationDataUnit.ByteRegister;
 
         }
 
